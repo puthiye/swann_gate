@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: swann-gate-deployment
+  labels:
+    app: swann-gate
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: swann-gate
+  template:
+    metadata:
+      labels:
+        app: swann-gate
+    spec:
+      containers:
+      - name: swann-gate
+        image: puthiye/swann-gate:v1.0.0
+        env:
+         - name: PYTHONUNBUFFERED
+           value: "1"
