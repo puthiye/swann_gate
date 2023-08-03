@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: swann-gate
-        image: puthiye/swann-gate:v1.0.3
+        image: puthiye/swann-gate:v1.0.3-amd64
         env:
          - name: PYTHONUNBUFFERED
            value: "1"
