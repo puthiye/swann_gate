@@ -23,3 +23,7 @@ Then assign role Storage Object Admin
 If you want to assign more permissions, then go IAM (not Service Accounts) and select sa-bucket.
 
 Goto service account -> Keys -> Add keys - download JSON file
+
+# Platform build
+For raspberry pi - create the docker build in pi so that arm64 platform will be used.
+Docker builds generated on x86 platforms will not work on ARM based chips.
