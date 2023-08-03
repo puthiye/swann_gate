@@ -28,8 +28,3 @@ Goto service account -> Keys -> Add keys - download JSON file
 For raspberry pi - create the docker build in pi so that arm64 platform will be used.
 Docker builds generated on x86 platforms will not work on ARM based chips.
 
-# Docker image pull
-This setup checks for docker image with tag puthiye/swann-gate:v1.0.3 in public repository in Docker hub.
-If your Docker images are in a public repository such as Docker Hub, Kubernetes can pull them right away. In most cases however your images are in a private Docker registry and Kubernetes must be given explicit access to it.
-If you want to pull from private repository in Docker hub, we have to pass secrets - refer https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry
-
